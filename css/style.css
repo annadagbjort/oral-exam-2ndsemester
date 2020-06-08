@@ -574,7 +574,7 @@ article.quotes {
 
 article.press {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-gap: 3em;
     justify-content: center;
     margin: 5vw;
