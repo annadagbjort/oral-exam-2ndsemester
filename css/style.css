@@ -1907,6 +1907,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
+        padding-bottom: 20px;
         /*        margin-bottom: auto;*/
         background: rgba(var(--grey-rgb), 0.8)
     }
