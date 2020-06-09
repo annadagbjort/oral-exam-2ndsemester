@@ -997,7 +997,11 @@ footer {
 }
 
 .schedule-expand {
-    margin: 2rem;
+/*    margin: 2rem;*/
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:2rem;
 }
 
 .one-event .schedule-date {
