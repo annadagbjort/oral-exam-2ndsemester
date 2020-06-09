@@ -9,7 +9,7 @@
 
     /* the text in the forms */
     --text-grey: #696969;
-
+    --text-grey-rgb: 102, 101, 100;
     /* All red text*/
     --text-red: #C10009;
 
@@ -294,7 +294,6 @@ iframe.front-page-youtube {
 article.newsletter-updates {
     background-image: url(../assets/img/large-img/blue-smile-large.png);
     height: 100%;
-
     background-position: -100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -334,6 +333,7 @@ article.newsletter-updates {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: solid rgba(var(--text-grey-rgb),0.3) 0.1em;
 }
 
 .newsletter-signup-form > .red-button {
@@ -1842,15 +1842,12 @@ footer {
     }
 
     .text-about-newsletter {
-        width: 40vw;
-    }
-
-    .text-about-newsletter {
+        width: 55vw;
         text-align: center;
     }
 
     .fp-newsletter {
-        width: 30vw;
+        width: 200px;
     }
 
     .fp-header {
@@ -2087,7 +2084,7 @@ footer {
     /*   Front Page    */
 
     .text-about-newsletter {
-        width: 70vw;
+        width: 80vw;
     }
 
     .fp-album-cover {
