@@ -183,28 +183,29 @@ header.header-section {
 
 header.frontPageHeader {
     background-image: url(../assets/img/large-img/red-dress-l.png);
-    height: 50vw;
+    height: 85vh;
 }
 
 header.musicHeader {
     background-image: url(../assets/img/large-img/rastrelli-and-gudrun-l.png);
-    height: 40vw;
+    height: 85vh;
 }
 
 header.scheduleHeader {
     background-image: url(../assets/img/large-img/frohlich-pfals-l.png);
-    height: 32vw;
-    background-position: center;
+    height: 85vh;
+    background-position: bottom;
 }
 
 header.repertoireHeader {
     background-image: url(../assets/img/large-img/konigin-der-nacht-l.png);
-    height: 38vw;
+    height: 85vh;
+    background-position: center;
 }
 
 header.aboutHeader {
     background-image: url(../assets/img/large-img/marmorsaal-trommel-l.png);
-    height: 38vw;
+    height: 85vh;
 }
 
 header.contactHeader {
@@ -1693,29 +1694,29 @@ footer {
 
     header.frontPageHeader {
         background-image: url(../assets/img/medium-img/red-dress-m.png);
-        height: 53vw;
+        height: 60vw;
     }
 
     header.musicHeader {
         background-image: url(../assets/img/medium-img/rastrelli-and-gudrun-m.png);
-        height: 40vw;
+        height: 60vw;
         background-position: top;
     }
 
     header.scheduleHeader {
         background-image: url(../assets/img/medium-img/frohlich-pfals-m.png);
-        height: 35vw;
+        height: 60vw;
         background-position: center;
     }
 
     header.repertoireHeader {
         background-image: url(../assets/img/medium-img/konigin-der-nacht-m.png);
-        height: 40vw;
+        height: 60vw;
     }
 
     header.aboutHeader {
         background-image: url(../assets/img/medium-img/marmorsaal-trommel-m.png);
-        height: 40vw;
+        height: 60vw
     }
 
     header.contactHeader {
@@ -1987,29 +1988,29 @@ footer {
 
     header.frontPageHeader {
         background-image: url(../assets/img/small-img/red-dress-s.png);
-        height: 60vw;
+        height: 70vw;
     }
 
     header.musicHeader {
         background-image: url(../assets/img/small-img/rastrelli-and-gudrun-s.png);
-        height: 60vw;
+        height: 70vw;
     }
 
     header.scheduleHeader {
         background-image: url(../assets/img/small-img/frohlich-pfals-s.png);
-        height: 60vw;
+        height: 70vw;
         background-position: center;
     }
 
     header.repertoireHeader {
         background-image: url(../assets/img/small-img/konigin-der-nacht-s.png);
-        height: 60vw;
+        height: 70vw;
         background-position: top;
     }
 
     header.aboutHeader {
         background-image: url(../assets/img/small-img/marmorsaal-trommel-s.png);
-        height: 60vw;
+        height: 70vw;
     }
 
     header.contactHeader {
