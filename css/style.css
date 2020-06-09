@@ -43,12 +43,13 @@ h3 {
     font-family: "crimson pro", serif;
     color: var(--text-red);
     font-weight: 500;
+        text-transform: capitalize;
+
 }
 
 h1 {
     font-size: 32px;
     text-align: center;
-    text-transform: uppercase;
     padding: 15px;
 }
 
@@ -158,17 +159,16 @@ button:focus {
 .text-right {
     text-align: right;
     padding: 15px;
+    padding-right: 3.5vw;
 }
 
 .red-button:hover {
-    color: var(--black);
-    box-shadow: 5px 10px 10px var(--text-grey);
+    box-shadow: 2.5px 5px 5px var(--text-grey);
 
 }
 
 .grey-button:hover {
-    color: var(--black);
-    box-shadow: 5px 10px 10px var(--text-grey);
+    box-shadow: 2.5px 5px 5px var(--text-grey);
 }
 
 
@@ -403,9 +403,9 @@ article.newsletter-updates {
 /*A B O U T  P A G E */
 
 .grey-bg {
-    background-color: var(--grey);
+    background-color: rgb(var(--grey-rgb), 0.5);
     margin: 20px 0;
-    padding: 20px 0;
+    padding: 45px 0;
 }
 
 .vocal-coaching-header {
@@ -514,7 +514,7 @@ article.newsletter-updates {
 /*add see-through bg color on hover */
 .prev:hover,
 .next:hover {
-    background-color: var(--grey);
+    color: var(--button-red);
 }
 
 /*dots */
@@ -528,7 +528,7 @@ article.newsletter-updates {
     height: 3px;
     width: 15px;
     margin: 0 2px;
-    background-color: var(--grey);
+    background-color: var(--white);
     display: inline-block;
     transition: background-color 0.6s ease;
 }
@@ -875,6 +875,7 @@ footer {
     background-color: var(--grey);
     width: 60vw;
     margin: 2rem auto;
+    margin-bottom: 5rem;
     padding: 3.5rem;
     font-family: "crimson pro", serif;
 }
@@ -1047,6 +1048,10 @@ footer {
     justify-self: center;
 }
 
+.schedule-perf-name {
+    text-transform: capitalize;
+}
+
 /* MEDIA QUERIES FOR SCHEDULE */
 
 @media only screen and (max-width: 910px) {
@@ -1141,6 +1146,7 @@ footer {
 .contact-info-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 7rem;
 }
 
 .contact-side-img {
@@ -1155,16 +1161,22 @@ footer {
     width: 50%;
 }
 
-.contact-info-det > p,
-.contact-info-det > h1 {
+.contact-info-det > p {
     margin: auto;
     padding: 0.5rem;
-
 }
 
+.contact-info-det > h1 {
+    text-align: left;
+    padding: 15px 7px;
+}
+
+.or {
+    margin: 2rem 0 1rem 0;
+}
 .email-form {
     width: 50%;
-    margin: 7rem auto 3rem auto;
+    margin: 3rem auto 3rem auto;
 }
 
 .email-form span {
@@ -1710,7 +1722,7 @@ footer {
 
     header.contactHeader {
         background-image: url(../assets/img/medium-img/bubbles-m.png);
-        height: 10vw;
+        height: 15vw;
         background-position: bottom;
     }
 
@@ -1958,7 +1970,6 @@ footer {
         padding: 0;
         margin: 0;
     }
-
 }
 
 
