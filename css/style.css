@@ -571,10 +571,10 @@ article.quotes {
 
 article.press {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-gap: 3em;
     justify-content: center;
-    margin:  0 5vw 5vw;
+    margin: 3vw;
 
 }
 
@@ -1040,10 +1040,14 @@ footer {
     padding: 1rem;
 }
 
-.btn-to-repertoire-wrap,
+.btn-to-repertoire-wrap {
+    margin-left: auto;
+    margin-right: 2em;
+}
+
 .btn-to-contact-wrap {
-    margin: auto;
-    justify-self: center;
+    margin-right: auto;
+    margin-left: 2em;
 }
 
 /* MEDIA QUERIES FOR SCHEDULE */
@@ -1117,6 +1121,13 @@ footer {
     .booking-container {
         height: 90vh;
     }
+
+    .btn-to-repertoire-wrap,
+    .btn-to-contact-wrap {
+        margin: auto;
+        justify-self: center;
+    }
+
 
 }
 
@@ -1822,8 +1833,8 @@ footer {
         margin-right: auto;
     }
 
-    .newsletter{
-        display:block;
+    .newsletter {
+        display: block;
         margin-left: auto;
         margin-right: auto;
 
@@ -1906,6 +1917,8 @@ footer {
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
         /*        margin-bottom: auto;*/
         background: rgba(var(--grey-rgb), 0.8)
     }
@@ -2072,7 +2085,7 @@ footer {
 
     /*   Front Page    */
 
- .text-about-newsletter {
+    .text-about-newsletter {
         width: 70vw;
     }
 
@@ -2131,7 +2144,7 @@ footer {
     }
 
     .vocal-coaching-paragraph {
-            padding: 0 6vw 50px;
+        padding: 0 6vw 50px;
         padding: 0;
         width: 80%;
         margin-left: auto;
@@ -2142,9 +2155,10 @@ footer {
         margin: 0px;
         padding: 0;
     }
-    myPressSlides{
-    margin: 0px;
-    padding: 10em;
+
+    myPressSlides {
+        margin: 0px;
+        padding: 10em;
     }
 
 
