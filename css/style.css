@@ -159,6 +159,7 @@ button:focus {
 .text-right {
     text-align: right;
     padding: 15px;
+    padding-right: 3.5vw;
 }
 
 .red-button:hover {
@@ -1961,7 +1962,6 @@ footer {
         padding: 0;
         margin: 0;
     }
-
 }
 
 
