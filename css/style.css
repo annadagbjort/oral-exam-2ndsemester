@@ -405,7 +405,7 @@ article.newsletter-updates {
 .grey-bg {
     background-color: rgb(var(--grey-rgb), 0.5);
     margin: 20px 0;
-    padding: 45px 0;
+    padding: 45px 20px;
 }
 
 .vocal-coaching-header {
