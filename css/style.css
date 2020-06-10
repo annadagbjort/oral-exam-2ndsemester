@@ -272,12 +272,13 @@ header.contactHeader {
 
 .fp-header {
     grid-column: span 2;
-    padding-top: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
 
 .gudrun-live {
     background: var(--grey);
-    padding-bottom: 25px;
+    padding-bottom: 75px;
 }
 
 iframe.front-page-youtube {
@@ -351,7 +352,7 @@ article.newsletter-updates {
     grid-template-columns: 1fr 1fr;*/
     background: rgb(var(--grey-rgb), 0.5);
     margin-top: 0em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
 }
 
 .debut-album-wrapper {
