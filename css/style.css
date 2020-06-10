@@ -278,7 +278,7 @@ header.contactHeader {
 
 .gudrun-live {
     background: var(--grey);
-    padding-bottom: 75px;
+    padding: 60px 0 80px 0;
 }
 
 iframe.front-page-youtube {
@@ -291,6 +291,8 @@ iframe.front-page-youtube {
 
 .the-video-title-fetched {
     text-align: center;
+    font-style: italic;
+    padding: 10px;
 }
 
 article.newsletter-updates {
@@ -352,7 +354,7 @@ article.newsletter-updates {
     grid-template-columns: 1fr 1fr;*/
     background: rgb(var(--grey-rgb), 0.5);
     margin-top: 0em;
-    padding-bottom: 3em;
+    padding: 60px 0 30px 0;
 }
 
 .debut-album-wrapper {
@@ -381,14 +383,22 @@ article.newsletter-updates {
     margin-top: 1em;
 }
 
+
+.gudruns-gallery {
+    padding: 30px 0 80px;
+}
+
+
 .theInstagram {
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding-left: 1%;
 }
 
 .instagramFigure {
-    width: 23vw;
-    margin: 2px;
+    width: 100%;
+    /*    margin: 2px;*/
 }
 
 .instagramFigure:hover {
@@ -1011,7 +1021,7 @@ footer {
 }
 
 .booking-container {
-    height: 55vh;
+    height: 70vh;
     background-image: url("../images/gudrun_schedule.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1048,12 +1058,28 @@ footer {
 }
 
 .btn-to-contact-wrap {
+
+/*
     margin-right: auto;
     margin-left: 2em;
+*/
 }
 
 .schedule-perf-name {
-    text-transform: capitalize;
+/*    text-transform: capitalize;*/
+
+    padding: 10px;
+}
+
+.btn-to-repertoire-wrap {
+    justify-self: end;
+}
+
+
+
+/*    margin: auto;*/
+/*    justify-self: center;*/
+
 }
 
 /* MEDIA QUERIES FOR SCHEDULE */
@@ -1277,7 +1303,7 @@ footer {
 }
 
 
-/*esther styling*/
+/*Music Page styling*/
 
 
 /*grid area structure*/
@@ -1296,7 +1322,6 @@ footer {
         "albumSection"
         "imageSection"
         "videoSection"
-
 }
 
 .album-section {
@@ -1309,7 +1334,7 @@ footer {
 
 .live-performances-videos {
     grid-area: videoSection;
-    background-color: var(--grey);
+/*    background-color: var(--grey);*/
 }
 
 
@@ -1319,6 +1344,8 @@ footer {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
 }
 
 .album-section-header {
@@ -1353,8 +1380,11 @@ footer {
 
 .call-to-action-buy {
     padding: 20px;
+    margin: 0 0 40px;
+    /*     height: 150px;*/
     justify-content: center;
     grid-column: 1/-1;
+    background-color: var(--grey);
 }
 
 .buy-section {
@@ -1371,18 +1401,15 @@ footer {
 /*icons*/
 .buy-icons {
     display: inline-block;
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 
-.amazon-icon {
-    width: 40px;
-    height: 40px;
-}
-
+.amazon-icon,
 .apple-icon {
     width: 40px;
     height: 40px;
 }
+
 
 .amazon-icon:hover {
     background-color: var(--grey);
@@ -1404,9 +1431,10 @@ footer {
 
 .performanceImage {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     object-position: -20% 0;
+
 }
 
 @media only screen and (max-width: 630px) {
@@ -1429,6 +1457,10 @@ footer {
     z-index: 1;
 }
 
+.performance-info{
+    font-style: italic;
+}
+
 /*performance videos*/
 
 .vdeo-section-wrapper {
@@ -1439,8 +1471,8 @@ footer {
 /*section header */
 .video-header {
     text-align: center;
-    padding: 40px 0;
-    background-color: #F2F1F0;
+    padding: 60px 0 0 0;
+/*    background-color: #F2F1F0;*/
 }
 
 /*video parent container*/
@@ -1450,13 +1482,15 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
-    max-width: 100%;
+    width: 100%;
 }
 
 
 .youtubeVideosIframe {
     padding: 20px;
-    flex-basis: 100%;
+    /*    flex-basis: 100%;*/
+    width: 550px;
+    height: 309.38px;
 }
 
 
@@ -1467,6 +1501,7 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: var(--grey);
     padding: 20px;
 
 }
@@ -1478,7 +1513,8 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 30px 0 80px 0;
+/*    background-color: var(--grey);*/
 }
 
 
@@ -1490,7 +1526,8 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        max-width: 90vw;
+        /*        max-width: 90vw;*/
+
     }
 
     /*spotify player*/
@@ -1508,6 +1545,11 @@ footer {
 
         padding: 15px;
         margin: 0;
+    }
+
+    /*    buy section*/
+    .call-to-action-buy {
+        width: 100%;
     }
 
 
@@ -1543,7 +1585,9 @@ footer {
 
     .youtubeVideosIframe {
         padding: 20px;
-        flex-basis: 100%;
+        /*        flex-basis: 100%;*/
+        width: 100%;
+        height: 100%;
     }
 
     /*font styling*/
@@ -1578,12 +1622,16 @@ footer {
     }
 
 
+    /*    buy section*/
+    .call-to-action-buy {
+        width: 100%;
+    }
+
     /*buy icons*/
 
     .buy-icons {
         display: inline-block;
-        padding: 40px;
-
+        padding: 20px 20px 0;
     }
 
     .amazon-icon {
@@ -1613,7 +1661,8 @@ footer {
 
     .youtubeVideosIframe {
         padding: 20px;
-        flex-basis: 100%;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -1624,9 +1673,11 @@ footer {
 
 
     .album-info-container {
+
         display: grid;
         grid-template-columns: repeat(2, 400px);
         grid-gap: 30px;
+
     }
 
 
@@ -1651,16 +1702,18 @@ footer {
     }
 
 
+
     /*    buy icons div*/
 
     .call-to-action-buy {
-        width: auto;
+        /*       width: 1199px;*/
     }
 
     /*buy icons*/
 
     .buy-icons {
         display: inline-block;
+        justify-content: center;
         padding: 20px 40px;
     }
 
@@ -1669,6 +1722,7 @@ footer {
         height: 60px;
         background-color: var(--grey);
         border-radius: 30%;
+
     }
 
     .apple-icon {
@@ -1921,7 +1975,6 @@ footer {
 
     .read-more-button {
         display: block;
-        /*        width: 200px;*/
         display: block;
         margin-right: auto;
         margin-left: auto;
@@ -2102,7 +2155,7 @@ footer {
     /*   Front Page    */
 
     .text-about-newsletter {
-        width: 80vw;
+        width: 70vw;
     }
 
     .fp-album-cover {
