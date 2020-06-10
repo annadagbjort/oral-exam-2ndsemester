@@ -45,7 +45,7 @@ function handleYoutubeLinkData(youtubeLinks) {
     //Have an array of all links > need to look into each >>
     youtubeLinks.forEach(TheYoutubeLink => {
 
-        //Have an each link
+        //Have each link
 
         //Find everything we need to fetch
         var theHeader = TheYoutubeLink.title.rendered;
@@ -53,6 +53,7 @@ function handleYoutubeLinkData(youtubeLinks) {
 
         if (MusicPage) {
             document.querySelector(".music-a-link").classList.add("active-nav");
+
             if (document.querySelector(".performanceVideosTemplate")) {
 
                 const performanceVideosTemplate = document.querySelector(".performanceVideosTemplate").content;
@@ -77,6 +78,7 @@ function handleYoutubeLinkData(youtubeLinks) {
 
         // Want to filter by category so look into all categories to find what we need
         TheYoutubeLink.categories.forEach(linkCat => {
+            // Now look into the categories of each link
 
             // category id of frontpage video is 8
             if (linkCat == 8) {
@@ -117,7 +119,6 @@ fetch("http://designhavn.dk/5Wordpress/wp-json/wp/v2/posts?_embed")
     .then(res => res.json())
     .then(handlePostData)
 
-//has comments √
 function handlePostData(PostDataHandled) {
 
     // Now we have an array with all the posts
@@ -131,8 +132,8 @@ function handlePostData(PostDataHandled) {
 
         // Inorder to choose the posts I want to display I look into all the category ids being used
         // Since I don't aways want to display every post
-        item.categories.forEach(postCategory => {
 
+        item.categories.forEach(postCategory => {
 
             // Vocal coaching - the vocal coaching category id is 10
             // So if it is 10 we want to do the following:
