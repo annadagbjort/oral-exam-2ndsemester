@@ -887,15 +887,25 @@ footer {
 }
 
 .repertoire-one-opera,
-.repertoire-one-music {
+.repertoire-one-music,
+.repertoire-opera-headings,
+.repertoire-music-headings {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
 }
 
-.repertoire-one-oratorio {
+.repertoire-one-oratorio,
+.repertoire-oratorios-headings {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
 
+}
+
+.repertoire-opera-headings,
+.repertoire-oratorios-headings,
+.repertoire-music-headings {
+    font-weight: 600;
+    padding-bottom: 1rem;
 }
 
 .repertoire-one-opera div,
@@ -903,7 +913,10 @@ footer {
 .repertoire-one-music div,
 .repertoire-one-opera p,
 .repertoire-one-oratorio p,
-.repertoire-one-music p {
+.repertoire-one-music p,
+.repertoire-opera-headings p,
+.repertoire-oratorios-headings p,
+.repertoire-music-headings p {
     padding: 1rem;
 }
 
@@ -927,7 +940,7 @@ footer {
 
 @media only screen and (max-width: 910px) {
     .repertoire-all-container {
-        width: 80vw;
+        width: 60vw;
     }
 
     .repertoire-one-opera,
@@ -941,9 +954,16 @@ footer {
         margin: 2rem 1rem;
     }
 
+    .repertoire-opera-headings,
+    .repertoire-oratorios-headings,
+    .repertoire-music-headings {
+        display: none;
+    }
+
+
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     .repertoire-all-container {
         padding: 1rem;
         width: 90vw;
