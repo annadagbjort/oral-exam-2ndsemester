@@ -43,7 +43,7 @@ h3 {
     font-family: "crimson pro", serif;
     color: var(--text-red);
     font-weight: 500;
-        text-transform: capitalize;
+    text-transform: capitalize;
 
 }
 
@@ -232,6 +232,7 @@ header.contactHeader {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 10px;
 }
 
 
@@ -333,7 +334,7 @@ article.newsletter-updates {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: solid rgba(var(--text-grey-rgb),0.3) 0.1em;
+    border: solid rgba(var(--text-grey-rgb), 0.3) 0.1em;
 }
 
 .newsletter-signup-form > .red-button {
@@ -438,14 +439,16 @@ article.newsletter-updates {
 }
 
 .about-header {
-    grid-column: 1/-1;
     margin-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+    width: 50%;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
 .about-text {
     padding-right: 30px;
-    padding-top: 30px;
+    padding-top: 15px;
     width: 50%;
 }
 
@@ -998,11 +1001,11 @@ footer {
 }
 
 .schedule-expand {
-/*    margin: 2rem;*/
+    /*    margin: 2rem;*/
     display: block;
-    margin-right:auto;
-    margin-left:auto;
-    margin-top:2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
 }
 
 .one-event .schedule-date {
@@ -1189,6 +1192,7 @@ footer {
 .or {
     margin: 2rem 0 1rem 0;
 }
+
 .email-form {
     width: 50%;
     margin: 3rem auto 3rem auto;
@@ -1894,7 +1898,6 @@ footer {
     /*    A B O U T   P A G E        */
 
     .about-grid-wrapper {
-
         background-size: 190%;
         background-position: 0% 95%;
         /*    background-attachment:fixed;*/
@@ -1902,6 +1905,14 @@ footer {
         margin-left: 0vw;
         /*   padding-top: 30px;*/
         padding-bottom: 0px;
+    }
+
+    .about-header {
+        padding-right: 0px;
+        padding-top: 50px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about-text,
@@ -1930,11 +1941,10 @@ footer {
         height: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: auto;
         margin-bottom: 20px;
         padding-bottom: 20px;
         /*        margin-bottom: auto;*/
-        background: rgba(var(--grey-rgb), 0.8)
+        background: rgba(var(--grey-rgb), 0.9)
     }
 
     /*Quote slideshow */
