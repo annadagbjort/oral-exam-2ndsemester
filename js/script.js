@@ -29,6 +29,7 @@ function handleInstagramPhotosData(InstagramPhotos) {
             const instagramTemplate = document.querySelector(".instagramTemplate").content;
             const cloneInstaTemp = instagramTemplate.cloneNode(true);
             cloneInstaTemp.querySelector(".imgInstagramCarousel").src = instaPhoto.source_url
+            cloneInstaTemp.querySelector(".openInsta").textContent = "Open on Instagram";
             document.querySelector(".theInstagram").appendChild(cloneInstaTemp);
         }
     });

@@ -404,18 +404,29 @@ article.newsletter-updates {
     /*    margin: 2px;*/
 }
 
+.instagramFigure img, .instagramFigure h4 {
+    transition: all .5s ease-in;
+}
+
+.instagramFigure:hover img {
+    filter: brightness(40%);
+}
+
+.instagramFigure:hover > h4 {
+    opacity: 1;
+}
 .InstaHide:hover{
 /*    display:block;*/
 }
 
 .openInsta {
     position: absolute;
-    top: 50%;
+    top: 30%;
     color: var(--footer-red);
-    background: rgb(255, 255, 255, 0.7);
     padding: 10px;
-    width: 23vw;
+    width: 100%;
     text-align: center;
+    opacity: 0;
 }
 
 
@@ -788,15 +799,19 @@ footer {
 @media only screen and (max-width: 1075px) {
 
     .footer-items-contact:nth-of-type(3) {
-        width: 28%;
+        width: 31%;
         padding: 10px 10px;
         box-sizing: border-box;
+    }
+
+    .footer-items-contact .fp-newsletter {
+        width: 160px;
     }
 
 
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 850px) {
     .footer-items-contact:nth-of-type(3) {
         width: 33%;
         padding: 10px 10px;
