@@ -405,28 +405,29 @@ article.newsletter-updates {
 }
 
 .instagramFigure img, .instagramFigure h4 {
-    transition: all .5s ease-in;
+    transition: all .2s ease-in;
 }
 
 .instagramFigure:hover img {
-    filter: brightness(40%);
+/*    filter: brightness(40%);*/
+    opacity: 0.3;
 }
 
 .instagramFigure:hover > h4 {
-    opacity: 1;
-}
-.InstaHide:hover{
-/*    display:block;*/
+    opacity: .9;
 }
 
 .openInsta {
     position: absolute;
-    top: 30%;
-    color: var(--footer-red);
-    padding: 10px;
-    width: 100%;
+    top: 45%;
+    color: var(--text-red);
+/*    padding: 10px 0;*/
+    width: 92%;
     text-align: center;
     opacity: 0;
+    font-size: 1.3em;
+    font-weight: normal;
+/*    background: rgb(255,255,255,0.6);*/
 }
 
 
