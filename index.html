@@ -23,7 +23,7 @@
         <div class="logo-nav-wrapper">
 
             <a href="index.html">
-            <img class="top-logo" src="assets/img/svg/gudrun-logo-21.svg" alt="GudrunLogo">
+                <img class="top-logo" src="assets/img/svg/gudrun-logo-21.svg" alt="GudrunLogo">
             </a>
 
             <nav class="top-nav">
@@ -48,13 +48,20 @@
 
     </header>
     <main class="front-page-grid fetchPost">
-        <article class="gudrun-live youtube">
-            <h1 class="fp-header">Guðrún Live</h1>
 
-            <!--            https://www.youtube.com/embed/LlOuoxSLhf4-->
-            <iframe src="" class="front-page-youtube" SameSite=None frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="the-video-title-fetched">The title of the video</p>
+        <article class="debut-album">
+            <h1 class="fp-header"></h1>
+            <div class="debut-album-wrapper">
+                <figure class="album-figure">
+                    <img src="assets/img/medium-img/nordurljos.jpg" alt="Norðurljós Album cover" class="fp-album-cover">
+                </figure>
+                <div class="about-album">
+                    <div class="text-about-album"></div>
+                    <button class="red-button">Listen</button>
+                </div>
+            </div>
         </article>
+
 
         <article class="newsletter-updates">
             <!--           <figure><img src="assets/img/medium-img/blue-smile-medium-faded.png" alt=""></figure>-->
@@ -75,22 +82,17 @@
             </div>
         </article>
 
-        <article class="debut-album">
-            <h1 class="fp-header"></h1>
-            <div class="debut-album-wrapper">
-                <figure class="album-figure">
-                    <img src="assets/img/medium-img/nordurljos.jpg" alt="Norðurljós Album cover" class="fp-album-cover">
-                </figure>
-                <div class="about-album">
-                    <div class="text-about-album"></div>
-                    <button class="red-button">Listen</button>
-                </div>
-            </div>
 
+        <article class="gudrun-live youtube">
+            <h1 class="fp-header">Live</h1>
+
+            <!--            https://www.youtube.com/embed/LlOuoxSLhf4-->
+            <iframe src="" class="front-page-youtube" SameSite=None frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="the-video-title-fetched">The title of the video</p>
         </article>
 
         <article class="gudruns-gallery">
-            <h1 class="fp-header">Gudruns Gallery</h1>
+            <h1 class="fp-header">Gallery</h1>
             <a href="https://www.instagram.com/annadagbjort_/" target="_blank">
                 <div class="theInstagram">
 
@@ -100,8 +102,10 @@
             <p class="text-right"><a href="https://www.instagram.com/annadagbjort_/" class="red-text" target="_blank">@gudrun-ingimars</a> on Instagram</p>
 
         </article>
+
         <template class="instagramTemplate">
-            <div class="instagramFigure"><img src="" alt="" class="imgInstagramCarousel">
+            <div class="instagramFigure" ><img src="" alt="" class="imgInstagramCarousel" onmouseover="removeHide(this)" onmouseout="addHide(this)">
+                <div class="InstaHide hide"><h4 class="openInsta">Open in instagram</h4> </div>
             </div>
         </template>
 

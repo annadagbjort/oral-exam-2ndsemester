@@ -386,6 +386,7 @@ article.newsletter-updates {
 
 .gudruns-gallery {
     padding: 30px 0 80px;
+    position: relative;
 }
 
 
@@ -394,16 +395,30 @@ article.newsletter-updates {
     justify-content: center;
     width: 100%;
     padding-left: 1%;
+    position: relative;
 }
 
 .instagramFigure {
     width: 100%;
+    position: relative;
     /*    margin: 2px;*/
 }
 
-.instagramFigure:hover {
-    opacity: 0.5;
+.InstaHide:hover{
+/*    display:block;*/
 }
+
+.openInsta {
+    position: absolute;
+    top: 50%;
+    color: var(--footer-red);
+    background: rgb(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 23vw;
+    text-align: center;
+}
+
+
 
 .imgInstagramCarousel {
     padding: 0px;
@@ -748,7 +763,7 @@ footer {
     height: auto;
 }
 
-.footer-items-contact img:hover{
+.footer-items-contact img:hover {
     transform: scale(1.2);
 }
 
@@ -1079,14 +1094,14 @@ footer {
 
 .btn-to-contact-wrap {
 
-/*
+    /*
     margin-right: auto;
     margin-left: 2em;
 */
 }
 
 .schedule-perf-name {
-/*    text-transform: capitalize;*/
+    /*    text-transform: capitalize;*/
 
     padding: 10px;
 }
@@ -1354,7 +1369,7 @@ footer {
 
 .live-performances-videos {
     grid-area: videoSection;
-/*    background-color: var(--grey);*/
+    /*    background-color: var(--grey);*/
 }
 
 
@@ -1477,7 +1492,7 @@ footer {
     z-index: 1;
 }
 
-.performance-info{
+.performance-info {
     font-style: italic;
 }
 
@@ -1492,7 +1507,7 @@ footer {
 .video-header {
     text-align: center;
     padding: 60px 0 0 0;
-/*    background-color: #F2F1F0;*/
+    /*    background-color: #F2F1F0;*/
 }
 
 /*video parent container*/
@@ -1534,7 +1549,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 30px 0 80px 0;
-/*    background-color: var(--grey);*/
+    /*    background-color: var(--grey);*/
 }
 
 

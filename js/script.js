@@ -28,12 +28,16 @@ function handleInstagramPhotosData(InstagramPhotos) {
             document.querySelector(".home-a-link").classList.add("active-nav");
             const instagramTemplate = document.querySelector(".instagramTemplate").content;
             const cloneInstaTemp = instagramTemplate.cloneNode(true);
-
             cloneInstaTemp.querySelector(".imgInstagramCarousel").src = instaPhoto.source_url
             document.querySelector(".theInstagram").appendChild(cloneInstaTemp);
         }
     });
+
 }
+
+
+
+
 
 
 // ***** Fetching youtube links *******
@@ -657,6 +661,18 @@ function showInfo(jsonData) {
 }
 
 
+//Instagram hover
+function removeHide(removeH) {
+    document.querySelector(".InstaHide").style.display = "block";
+    removeH.style.opacity = "0.5";
+}
+
+function addHide(add) {
+    add.style.opacity = "1";
+    document.querySelector(".InstaHide").style.display = "none";
+}
+
+
 
 //Press Quotes!
 var slidePressIndex = 1;
@@ -694,6 +710,9 @@ function showPressSlides(n) {
     pressDots[slidePressIndex - 1].className += " active";
 
 }
+
+
+
 
 
 
